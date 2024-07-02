@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Mono } from "next/font/google";
 
 import "@/styles/global.css";
 
 import { Navbar } from "@/components/NavBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = DM_Mono({ weight: ["300", "400", "500"], preload: false });
 
 export const metadata: Metadata = {
   title: "Luis Carlos - Home",
