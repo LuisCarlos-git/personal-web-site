@@ -1,15 +1,21 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       backgroundColor: {
-        primary: "#191920",
+        'primary-dark': '#272D37',
+        'secondary-dark': '#1F252A',
+      },
+      textColor: {
+        'primary-dark': '#BDBFC1',
+        'secondary-dark': '#7E8285',
+        'active-dark': '#CB5D2C',
       },
     },
   },
