@@ -6,14 +6,14 @@ type Menu = {
 export const menus = [
   {
     href: '/about-me',
-    label: 'About me',
+    label: 'Sobre mim',
   },
   {
     href: '/projects',
-    label: 'Projects',
+    label: 'Projetos',
   },
   {
     href: '/articles',
-    label: 'Articles',
+    label: 'Artigos',
   },
 ] as const satisfies Menu[];
