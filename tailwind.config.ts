@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        'primary-dark': '#272D37',
+        'primary-dark': '#191920',
         'secondary-dark': '#1F252A',
       },
       borderColor: {
@@ -18,7 +18,19 @@ const config: Config = {
       textColor: {
         'primary-dark': '#BDBFC1',
         'secondary-dark': '#7E8285',
-        'active-dark': '#CB5D2C',
+      },
+      backgroundImage: {
+        'primary-gradient':
+          'linear-gradient( to right,#b8cbb8 0%,#b8cbb8 0%,#b465da 0%,#cf6cc9 33%,#ee609c 66%,#ee609c 100% )',
+      },
+
+      animation: {
+        gradient: 'gradient 4s linear infinite',
+      },
+      keyframes: {
+        gradient: {
+          to: { 'background-position': '200%' },
+        },
       },
     },
   },

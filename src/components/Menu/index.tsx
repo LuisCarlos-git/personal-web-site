@@ -13,13 +13,14 @@ export function Menu() {
     <ul className={styles.menuCss()}>
       {menus.map(menu => (
         <li key={menu.href}>
-          <Link
-            className={styles.menuItemCss({
-              active: pathname === menu.href,
-            })}
-            href={menu.href}
-          >
-            {menu.label}
+          <Link href={menu.href}>
+            <span
+              className={styles.menuItemCss({
+                active: pathname === menu.href,
+              })}
+            >
+              {menu.label}
+            </span>
           </Link>
         </li>
       ))}

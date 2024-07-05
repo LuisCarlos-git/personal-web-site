@@ -18,7 +18,7 @@ export const menuItemCss = tv({
   base: 'text-primary-dark text-lg',
   variants: {
     active: {
-      true: 'text-active-dark',
+      true: 'inline-block text-transparent bg-primary-gradient bg-clip-text animate-gradient bg-[length:200%_auto]',
     },
   },
 });
