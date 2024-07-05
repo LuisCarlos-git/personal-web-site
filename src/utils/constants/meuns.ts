@@ -1,4 +1,4 @@
-type TMenu = {
+type Menu = {
   href: string;
   label: string;
 };
@@ -16,4 +16,4 @@ export const menus = [
     href: '/articles',
     label: 'Articles',
   },
-] as const satisfies TMenu[];
+] as const satisfies Menu[];
