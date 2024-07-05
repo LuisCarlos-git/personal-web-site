@@ -5,15 +5,15 @@ type TMenu = {
 
 export const menus = [
   {
-    href: '/',
+    href: '/about-me',
     label: 'About me',
   },
   {
     href: '/projects',
-    label: 'Products',
+    label: 'Projects',
   },
   {
-    href: '/blog',
-    label: 'Blog',
+    href: '/articles',
+    label: 'Articles',
   },
 ] as const satisfies TMenu[];

@@ -1,17 +1,17 @@
 import * as styles from './styles';
 
-export function PersonalCard() {
+export function Header() {
   return (
-    <div className={styles.personalDataCss()}>
+    <header className={styles.headerWrapperCss()}>
       <img
         src="https://api.multiavatar.com/Starcrasher.png"
         alt=""
-        width={120}
+        width={50}
       />
       <div className={styles.textWrapperCss()}>
         <span className={styles.titleCss()}>Luis Carlos</span>
-        <p className={styles.subtitleCss()}>luiscarlosbastos1107@gmail.com</p>
+        <p className={styles.subtitleCss()}>Frontend Engineer</p>
       </div>
-    </div>
+    </header>
   );
 }

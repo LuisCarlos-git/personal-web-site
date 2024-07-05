@@ -12,6 +12,9 @@ const config: Config = {
         'primary-dark': '#272D37',
         'secondary-dark': '#1F252A',
       },
+      borderColor: {
+        'primary-dark': '#BDBFC1',
+      },
       textColor: {
         'primary-dark': '#BDBFC1',
         'secondary-dark': '#7E8285',

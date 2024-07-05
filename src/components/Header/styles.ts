@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
-export const personalDataCss = tv({
-  base: 'flex justify-center items-center flex-col',
+export const headerWrapperCss = tv({
+  base: 'flex gap-4 p-3 border-primary-dark border-b',
 });
 
 export const titleCss = tv({
@@ -13,5 +13,5 @@ export const subtitleCss = tv({
 });
 
 export const textWrapperCss = tv({
-  base: 'flex justify-center items-center flex-col mt-3',
+  base: 'flex flex-col',
 });

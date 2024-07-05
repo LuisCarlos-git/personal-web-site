@@ -3,11 +3,11 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import { menus } from '@/utils/constants';
+
 import * as styles from './styles';
 
-import { menus } from './menus';
-
-export function NavMenu() {
+export function Menu() {
   const pathname = usePathname();
   return (
     <ul className={styles.menuCss()}>

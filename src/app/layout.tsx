@@ -3,7 +3,7 @@ import { DM_Mono } from 'next/font/google';
 
 import '@/styles/global.css';
 
-import { Sidebar } from '@/components';
+import { Menu, Header } from '@/components';
 
 const inter = DM_Mono({ weight: ['300', '400', '500'], preload: false });
 
@@ -20,7 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Sidebar />
+        <Menu />
+        <Header />
         {children}
       </body>
     </html>
