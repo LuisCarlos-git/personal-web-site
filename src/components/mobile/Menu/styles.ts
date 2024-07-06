@@ -11,7 +11,9 @@ export const menuCss = tv({
     py-4
     shadow-black
     border-t
-    border-primary-dark`,
+    border-primary-dark
+    md:hidden
+    `,
 });
 
 export const menuItemCss = tv({

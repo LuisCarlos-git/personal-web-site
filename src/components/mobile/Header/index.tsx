@@ -1,4 +1,5 @@
-import { Avatar } from '../Avatar';
+import { Avatar } from '@/components';
+
 import * as styles from './styles';
 
 export function Header() {
