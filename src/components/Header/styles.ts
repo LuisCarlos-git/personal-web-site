@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const headerWrapperCss = tv({
-  base: 'flex gap-4 p-3 border-primary-dark border-b',
+  base: 'flex gap-4 p-3 border-primary-dark border-b md:hidden',
 });
 
 export const titleCss = tv({
