@@ -1,7 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
+import { Link } from '@/components';
 
 import { menus } from '@/utils/constants';
 
@@ -13,15 +14,11 @@ export function Menu() {
     <ul className={styles.menuCss()}>
       {menus.map(menu => (
         <li key={menu.href}>
-          <Link href={menu.href}>
-            <span
-              className={styles.menuItemCss({
-                active: pathname === menu.href,
-              })}
-            >
-              {menu.label}
-            </span>
-          </Link>
+          <Link
+            href={menu.href}
+            label={menu.label}
+            isActive={pathname === menu.href}
+          />
         </li>
       ))}
     </ul>

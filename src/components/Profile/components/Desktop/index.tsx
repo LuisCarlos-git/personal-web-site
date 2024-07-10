@@ -1,11 +1,13 @@
-import { Avatar } from '@/components';
+import { Avatar } from "@/components/Avatar";
 
 import * as styles from './styles';
 
-export function Header() {
+
+export function Desktop() {
   return (
-    <header className={styles.headerWrapperCss()}>
+    <div className={styles.wrapperCss()}>
       <Avatar
+        size="huge"
         username="Luis Carlos"
         src="https://api.multiavatar.com/Starcrasher.png"
       />
@@ -13,6 +15,6 @@ export function Header() {
         <span className={styles.titleCss()}>Luis Carlos</span>
         <p className={styles.subtitleCss()}>Frontend Engineer</p>
       </div>
-    </header>
-  );
+    </div>
+  )
 }

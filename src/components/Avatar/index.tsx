@@ -1,21 +1,25 @@
-import { getInitials } from '@/utils/helpers';
 import * as RdxAvatar from '@radix-ui/react-avatar';
+
+import { getInitials } from '@/utils/helpers';
+
+import * as styles from './styles'
 
 type AvatarProps = {
   username: string;
   src: string;
+  size: 'small' | 'huge'
 };
 
-export function Avatar({ src, username }: AvatarProps) {
+export function Avatar({ src, username, size }: AvatarProps) {
   return (
-    <RdxAvatar.Root className="inline-flex h-[50px] w-[50px] select-none items-center justify-center overflow-hidden rounded-full align-middle">
+    <RdxAvatar.Root className={styles.rootCss({size})}>
       <RdxAvatar.Image
-        className="h-full w-full rounded-[inherit] object-cover"
-        // src={src}
+        className={styles.imageCss()}
+        src={src}
         alt="Colm Tuite"
       />
       <RdxAvatar.Fallback
-        className="text-primary-dark flex h-full w-full items-center justify-center bg-secondary-dark text-[15px] font-medium"
+        className={styles.fallbackCss()}
         delayMs={600}
       >
         {getInitials(username)}
