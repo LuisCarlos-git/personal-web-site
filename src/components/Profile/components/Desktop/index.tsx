@@ -1,7 +1,6 @@
-import { Avatar } from "@/components/Avatar";
+import { Avatar } from '@/components/Avatar';
 
 import * as styles from './styles';
-
 
 export function Desktop() {
   return (
@@ -16,5 +15,5 @@ export function Desktop() {
         <p className={styles.subtitleCss()}>Frontend Engineer</p>
       </div>
     </div>
-  )
+  );
 }
