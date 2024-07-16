@@ -5,7 +5,6 @@ import '@/styles/global.css';
 
 import { Menu, Profile, Sidebar, Cursor } from '@/components';
 
-
 const inter = DM_Mono({ weight: ['300', '400', '500'], preload: false });
 
 export const metadata: Metadata = {
@@ -22,9 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Cursor />
-        <Profile component='mobile'/>
+        <Profile component="mobile" />
         <Menu />
-        <div className="flex">          
+        <div className="flex">
           <Sidebar />
           {children}
         </div>
