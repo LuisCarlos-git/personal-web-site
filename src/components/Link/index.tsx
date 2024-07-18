@@ -1,5 +1,4 @@
 import NextLink, { LinkProps as NextLinkProps } from 'next/link';
-import { usePathname } from 'next/navigation';
 
 import * as styles from './styles';
 

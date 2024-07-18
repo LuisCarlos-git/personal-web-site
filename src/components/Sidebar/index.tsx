@@ -2,7 +2,7 @@
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 
-import { Avatar, Link, Profile } from '@/components';
+import { Link, Profile } from '@/components';
 
 import { menus } from '@/utils/constants';
 
