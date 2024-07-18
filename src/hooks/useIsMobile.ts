@@ -1,18 +1,17 @@
-import { useCallback, useEffect, useState } from 'react';
+import * as React from 'react';
 
 export function useIsMobile(mobileScreenSize = 768) {
-  if (window && typeof window.matchMedia !== 'function') {
-    throw Error('matchMedia not supported by browser!');
-  }
-  const [isMobile, setIsMobile] = useState(
-    window.matchMedia(`(max-width: ${mobileScreenSize}px)`).matches
-  );
+  const [isMobile, setIsMobile] = React.useState(false);
 
-  const checkIsMobile = useCallback((event: MediaQueryListEvent) => {
+  const checkIsMobile = React.useCallback((event: MediaQueryListEvent) => {
     setIsMobile(event.matches);
   }, []);
 
-  useEffect(() => {
+  React.useEffect(() => {
+    if (typeof window.matchMedia !== 'function') {
+      throw Error('matchMedia not supported by browser!');
+    }
+
     const mediaListener = window.matchMedia(
       `(max-width: ${mobileScreenSize}px)`
     );
