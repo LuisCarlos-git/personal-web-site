@@ -1,1 +1,5 @@
-export const animationDelayTime = 0.15 as const;
+export const animationDelayTime = {
+  fast: 0.15,
+  default: 0.3,
+  slow: 0.35,
+} as const;

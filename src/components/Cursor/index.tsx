@@ -5,7 +5,6 @@ import { useIsMobile } from '@/hooks';
 
 export function Cursor() {
   const isMobile = useIsMobile();
-  console.log(isMobile);
 
   return (
     !isMobile && (

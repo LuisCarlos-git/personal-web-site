@@ -6,3 +6,4 @@ export * from './Sidebar';
 export * from './Link';
 export * from './Profile';
 export * from './Cursor';
+export * from './Transition';

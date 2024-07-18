@@ -3,17 +3,17 @@ import { animationDelayTime } from '../constants';
 export const sidebarAnimations = {
   initial: {
     opacity: 0,
-    translateX: -300,
+    x: -300,
   },
 
   animate: {
     opacity: 1,
-    translateX: 0,
+    x: 0,
   },
 
   transition(i: number) {
     return {
-      delay: animationDelayTime * i,
+      delay: animationDelayTime.fast * i,
       stiffness: 0,
     };
   },
