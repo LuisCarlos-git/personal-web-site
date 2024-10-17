@@ -7,3 +7,5 @@ export * from './Link';
 export * from './Profile';
 export * from './Cursor';
 export * from './Transition';
+export * from './Tag';
+export * from './ProjectCard';

@@ -3,7 +3,7 @@ import { DM_Mono } from 'next/font/google';
 
 import '@/styles/global.css';
 
-import { Menu, Profile, Sidebar, Cursor } from '@/components';
+import { Menu, Profile, Sidebar, Cursor, Transition } from '@/components';
 
 const inter = DM_Mono({ weight: ['300', '400', '500'], preload: false });
 
@@ -25,7 +25,7 @@ export default function RootLayout({
         <Menu />
         <div className="flex">
           <Sidebar />
-          {children}
+          <Transition>{children}</Transition>
         </div>
       </body>
     </html>
