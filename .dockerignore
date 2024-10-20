@@ -1,7 +1,7 @@
-node_modules
-.pnpm
-dist
-.next
 Dockerfile
 .dockerignore
-*.log
+node_modules
+npm-debug.log
+README.md
+.next
+.git
